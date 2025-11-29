@@ -40,7 +40,7 @@ for (let n = 0; n < cardButtons.length; n++) {
 
     let total = (cardPriceNumber + totalPriceSpanNumber).toFixed(2);
     let discount = (total * 0.1).toFixed(2);
-    let netAmount = total - discount;
+    let netAmount = (total - discount).toFixed(2);
 
     document.getElementById("totalPrice").innerText = `${total}TK`;
     discountSpan.innerText = `${discount}TK`;
